@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style/histoireChap.css' %}">
+</head>
+<body>
+    <div class="container home">
+        <h2>Bienvenue {{ user.username }} dans l'histoire du chevalier solitaire</h2>
+        <h2>Chapitre 1 : Le chevalier solitaire</h2>
+        <h3>Les règles sont simples vous devez simplement faire des choix pour avancer dans l'histoire.
+            Attention vos choix auront des conséquences. Bonne chance !
+        </h3>
+
+        <p>Le chevalier solitaire était un chevalier qui avait perdu sa bien aimé.container.
+            Il a donc décidé de partir à l'aventure pour la retrouver.
+            Dans les enfers. Mais il était prisonnier de ce corps de chair et de sang.
+            Dont il ne pouvait ce débarrasser. Maudit par une sorcière qui lui avait jeté un sort.
+            Il ne pouvait mourrir. Il était donc condamné à errer dans les enfers qu'était devenu le monde.
+
+            Il a donc décidé de partir à la recherche de cette sorcière pour être libéré de ce sort.
+            Il part donc à sa recherche.</p>
+
+            Quelle est votre première action ?</p>
+        </p>
+        <button><a href="{% url "chap2" %}">Choisir la motagne</a></button>
+        <button><a href="{% url "chap3" %}">Choisir la forêt</a></button>
+    </div>
+</body>
+</html>
